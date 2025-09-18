@@ -35,27 +35,29 @@
         }
         
         .profile-img {
-            width: 150px;
-            height: 150px;
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
-            background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            overflow: hidden;
             margin: 0 auto 20px;
-            color: white;
-            font-size: 3rem;
+            box-shadow: 0 5px 15px rgba(14, 11, 11, 0.2);
+        }
+        
+        .profile-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
         
         h1 {
             font-size: 2.8rem;
             margin-bottom: 10px;
-            color: #2c3e50;
+            color: #000;
         }
         
         .nickname {
             font-size: 1.5rem;
-            color: #667eea;
+            color: #FF0000;
             margin-bottom: 20px;
         }
         
@@ -64,13 +66,13 @@
             align-items: center;
             justify-content: center;
             gap: 8px;
-            color: #7f8c8d;
+            color: #000;
             margin-bottom: 10px;
         }
         
         .college {
             font-size: 1.2rem;
-            color: #34495e;
+            color: #000;
             margin-bottom: 30px;
         }
         
@@ -83,10 +85,10 @@
         }
         
         h2 {
-            color: #2c3e50;
+            color: #000;
             margin-bottom: 20px;
             padding-bottom: 10px;
-            border-bottom: 2px solid #667eea;
+            border-bottom: 2px solid #FF0000;
         }
         
         .tech-stack {
@@ -97,7 +99,7 @@
         }
         
         .tech-badge {
-            background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(45deg, #FF0000 0%, #000000 100%);
             color: white;
             padding: 12px 20px;
             border-radius: 30px;
@@ -109,14 +111,14 @@
         
         .project {
             background: #f8f9fa;
-            border-left: 4px solid #667eea;
+            border-left: 4px solid #FF0000;
             padding: 20px;
             border-radius: 0 8px 8px 0;
             margin-top: 20px;
         }
         
         .project h3 {
-            color: #2c3e50;
+            color: #000;
             margin-bottom: 10px;
         }
         
@@ -134,14 +136,14 @@
         }
         
         .contact-item i {
-            color: #667eea;
+            color: #FF0000;
             font-size: 1.2rem;
         }
         
         footer {
             text-align: center;
             padding: 20px;
-            color: #7f8c8d;
+            color: #000;
             font-size: 0.9rem;
         }
         
@@ -157,6 +159,11 @@
             .tech-stack {
                 justify-content: center;
             }
+            
+            .profile-img {
+                width: 150px;
+                height: 150px;
+            }
         }
     </style>
 </head>
@@ -164,9 +171,9 @@
     <div class="container">
         <header>
             <div class="profile-img">
-                <i class="fas fa-user"></i>
+                <img src="https://z-cdn-media.chatglm.cn/files/655322eb-766f-443f-9064-4bfbbe33e31a_pasted_image_1758205354973.png?auth_key=1789741384-6134d4eea928490e8a0f280a7b911831-0-52d41d4d9c679bdae0f84e47b58c2c56" alt="Asrin Salmika Profile">
             </div>
-            <h1>M. Asrin Salmika</h1>
+            <h1>M.A. Asrin Salmika</h1>
             <div class="nickname">axsrn</div>
             <div class="location">
                 <i class="fas fa-map-marker-alt"></i>
@@ -180,7 +187,7 @@
         
         <section class="section">
             <h2><i class="fas fa-code"></i> About Me</h2>
-            <p>I'm a passionate student developer with interests in programming and web technologies. Currently pursuing my studies at Nachiappa Swamigal Arts and Science College, I enjoy building practical solutions and exploring new technologies.</p>
+            <p>I'm a passionate student developer with interests in programming and web technologies. Currently pursuing my studies at Hope3 Foundation , I enjoy building practical solutions and exploring new technologies.</p>
         </section>
         
         <section class="section">
@@ -205,9 +212,9 @@
             <h2><i class="fas fa-project-diagram"></i> Current Project</h2>
             <div class="project">
                 <h3>Naatiparitchai</h3>
-                <p>A project focused on [brief description of what Naatiparitchai does]. This project demonstrates my skills in [technologies used] and addresses [problem it solves].</p>
+                <p>A project focused on health monitoring and well-being. This project demonstrates my skills in IoT sensors, Arduino programming, and data analysis and addresses the problem of tracking vital signs such as blood pressure and heart rate while providing users with health suggestions for better awareness and lifestyle management.</p>
                 <div style="margin-top: 15px;">
-                    <a href="#" style="color: #667eea; font-weight: 600;">
+                    <a href="#" style="color: #FF0000; font-weight: 600;">
                         <i class="fab fa-github"></i> View Project on GitHub
                     </a>
                 </div>
@@ -219,7 +226,7 @@
             <div class="contact">
                 <div class="contact-item">
                     <i class="fas fa-envelope"></i>
-                    <span>your.email@example.com</span>
+                    <span>axsrn07@gmail.com</span>
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-map-marker-alt"></i>
@@ -227,13 +234,13 @@
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-phone"></i>
-                    <span>+91 XXXXXXXXXX</span>
+                    <span>+91 8XXXXXXXX4</span>
                 </div>
             </div>
         </section>
         
         <footer>
-            <p>&copy; 2023 M. Asrin Salmika. All rights reserved.</p>
+            <p>&copy; 2025 M. Asrin Salmika. All rights reserved.</p>
         </footer>
     </div>
 </body>
