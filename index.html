@@ -1,10 +1,240 @@
-
-mkdir mysite
-cd mysite
-echo "<!doctype html><meta charset='utf-8'><title>Hi</title><h1>Hello from your-username</h1>" > index.html
-git init
-git add index.html
-git commit -m "Initial site"
-git branch -M main
-git remote add origin https://github.com/axsrn07/axsrn07.github.io.git
-git push -u origin main
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asrin Salmika | Student Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: white;
+            font-size: 3rem;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        .nickname {
+            font-size: 1.5rem;
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+        
+        .location {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            color: #7f8c8d;
+            margin-bottom: 10px;
+        }
+        
+        .college {
+            font-size: 1.2rem;
+            color: #34495e;
+            margin-bottom: 30px;
+        }
+        
+        .section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .tech-badge {
+            background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 30px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .project {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+            margin-top: 20px;
+        }
+        
+        .project h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .contact-item i {
+            color: #667eea;
+            font-size: 1.2rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .nickname {
+                font-size: 1.2rem;
+            }
+            
+            .tech-stack {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile-img">
+                <i class="fas fa-user"></i>
+            </div>
+            <h1>M. Asrin Salmika</h1>
+            <div class="nickname">axsrn</div>
+            <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Kalanivasal, Karaikudi</span>
+            </div>
+            <div class="college">
+                <i class="fas fa-graduation-cap"></i> 
+                Nachiappa Swamigal Arts and Science College
+            </div>
+        </header>
+        
+        <section class="section">
+            <h2><i class="fas fa-code"></i> About Me</h2>
+            <p>I'm a passionate student developer with interests in programming and web technologies. Currently pursuing my studies at Nachiappa Swamigal Arts and Science College, I enjoy building practical solutions and exploring new technologies.</p>
+        </section>
+        
+        <section class="section">
+            <h2><i class="fas fa-laptop-code"></i> Technical Skills</h2>
+            <div class="tech-stack">
+                <div class="tech-badge">
+                    <i class="fab fa-python"></i> Python
+                </div>
+                <div class="tech-badge">
+                    <i class="fab fa-java"></i> Java
+                </div>
+                <div class="tech-badge">
+                    <i class="fas fa-code"></i> C Programming
+                </div>
+                <div class="tech-badge">
+                    <i class="fab fa-html5"></i> Web Development
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2><i class="fas fa-project-diagram"></i> Current Project</h2>
+            <div class="project">
+                <h3>Naatiparitchai</h3>
+                <p>A project focused on [brief description of what Naatiparitchai does]. This project demonstrates my skills in [technologies used] and addresses [problem it solves].</p>
+                <div style="margin-top: 15px;">
+                    <a href="#" style="color: #667eea; font-weight: 600;">
+                        <i class="fab fa-github"></i> View Project on GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2><i class="fas fa-address-card"></i> Contact Information</h2>
+            <div class="contact">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>your.email@example.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Kalanivasal, Karaikudi</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+91 XXXXXXXXXX</span>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p>&copy; 2023 M. Asrin Salmika. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
